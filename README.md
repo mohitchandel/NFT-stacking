@@ -6,6 +6,30 @@ ERC1155 Standard Token (NFT) :point_right:	 [WarWeapons](https://rinkeby.ethersc
 
 ERC20 Standard Token (Reward Coin) :point_right:	 [Warcoin](https://rinkeby.etherscan.io/address/0x398195aAe738E6f57e9Fb11EDaEb915BC14C65af)
 
+### Usage
+
+Before running any command, make sure to install dependencies:
+
+`npm install`
+
+#### Compile
+
+Compile the smart contracts with Hardhat: 
+
+`npx hardhat compile`
+
+#### Test
+
+Run the tests:
+
+`npx hardhat test`
+
+#### Deploy
+
+deploy contract to netowrk: 
+
+`npx hardhat run --network rinkeby scripts/deploy.js`
+
 ## Stacking Smart Contract
 
 stacking smart contract will be created after the creation of NFT (WarWeapons) and Reward token (warcoin) first because the Staking smart contract has two paremeters in its contructor to define the tokens.
