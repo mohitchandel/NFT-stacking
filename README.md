@@ -2,13 +2,13 @@
 
 Token is created and deployed on Rinkeby Test network
 
-ERC1155 Standard Token (NFT) `>>` [WarWeapons](https://rinkeby.etherscan.io/address/0x4228c42B33003500b07DBdb58675ACD3f28Ef23a)
+ERC1155 Standard Token (NFT) :point_right:	 [WarWeapons](https://rinkeby.etherscan.io/address/0x4228c42B33003500b07DBdb58675ACD3f28Ef23a)
 
-ERC20 Standard Token (Reward Coin) `>>` [Warcoin](https://rinkeby.etherscan.io/address/0x398195aAe738E6f57e9Fb11EDaEb915BC14C65af)
+ERC20 Standard Token (Reward Coin) :point_right:	 [Warcoin](https://rinkeby.etherscan.io/address/0x398195aAe738E6f57e9Fb11EDaEb915BC14C65af)
 
 ## Stacking Smart Contract
 
-stacking smart contract creation needs the creation of NFT (WarWeapons) and Reward token (warcoin) first because the Staking smart contract has two paremeters in its contructor to define the tokens.
+stacking smart contract will be created after the creation of NFT (WarWeapons) and Reward token (warcoin) first because the Staking smart contract has two paremeters in its contructor to define the tokens.
 
 `constructor(WarWeapon _nftaddress, Warcoin _rewardToken) {}`
 
@@ -16,7 +16,7 @@ functions need to call before stacking
 
 `setApprovalForAll(address operator, approved true)` 
 
-NFT Approval -> https://rinkeby.etherscan.io/tx/0x82ec9538ddc2b5f90db9b440aa7ee71eb6678e8f766c97367f7016824bfe8fbc
+NFT Approval :point_right: [0x82ec9538ddc2b5f90db9b440aa7ee71eb6678e8f766c97367f7016824bfe8fbc](https://rinkeby.etherscan.io/tx/0x82ec9538ddc2b5f90db9b440aa7ee71eb6678e8f766c97367f7016824bfe8fbc)
 
 this function is used to assign or revoke the full approval rights to the given operator. The caller of the function (msg.sender) is the approver.
 
@@ -38,7 +38,7 @@ this function has following arguments:
 - `uint16 _months` : For how many moths i.e. 1,6 or 12 (only these inputs are allowed).
 
 
-Exaple of stacking transaction -> https://rinkeby.etherscan.io/tx/0x6671657b9e85f8065ac057be13256636097b5078d48bb9f0cb69d3c5fbfec59f
+Exaple of stacking transaction :fire:	:point_right: [0x6671657b9e85f8065ac057be13256636097b5078d48bb9f0cb69d3c5fbfec59f](https://rinkeby.etherscan.io/tx/0x6671657b9e85f8065ac057be13256636097b5078d48bb9f0cb69d3c5fbfec59f)
 
 ### How to Unstake NFT
 

@@ -63,6 +63,13 @@ contract Stacking {
         calculatedPrice(staked[msg.sender].months);
         rewardToken.mint(msg.sender, rewardPrice);
         delete staked[msg.sender];
+        nftToken.safeTransferFrom(
+           address(this),
+            msg.sender,
+            staked[msg.sender].tokenId,
+            staked[msg.sender].amount,
+            ""
+        );
         emit nftUnstaked(msg.sender);
     }
 
@@ -76,7 +83,7 @@ contract Stacking {
         } else {
             basicPercent = 15;
         }
-        rewardPrice = (staked[msg.sender].amount * basicPercent) * 10**18;
+        rewardPrice = ((staked[msg.sender].amount * basicPercent) * 10 ** 18) / 100;
     }
 
     // Function to make contract eligible to store ERC1155 standarde token
