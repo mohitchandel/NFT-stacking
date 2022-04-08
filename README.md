@@ -2,9 +2,9 @@
 
 Token is created and deployed on Rinkeby Test network
 
-ERC1155 Standard Token (NFT) :point_right:	 [WarWeapons](https://rinkeby.etherscan.io/address/0x4228c42B33003500b07DBdb58675ACD3f28Ef23a)
+ERC1155 Standard Token (NFT) :point_right:	 [WarWeapons](https://rinkeby.etherscan.io/address/0x5aA22BeF1eF4BdB15Fcce13345AE4b19D787cb17)
 
-ERC20 Standard Token (Reward Coin) :point_right:	 [Warcoin](https://rinkeby.etherscan.io/address/0x398195aAe738E6f57e9Fb11EDaEb915BC14C65af)
+ERC20 Standard Token (Reward Coin) :point_right:	 [Warcoin](https://rinkeby.etherscan.io/address/0xccd40ebD384eEE363F651B46952f94A1bcB9e6e1)
 
 ### Usage
 
@@ -40,7 +40,6 @@ functions need to call before stacking
 
 `setApprovalForAll(address operator, approved true)` 
 
-NFT Approval :point_right: [0x82ec9538ddc2b5f90db9b440aa7ee71eb6678e8f766c97367f7016824bfe8fbc](https://rinkeby.etherscan.io/tx/0x82ec9538ddc2b5f90db9b440aa7ee71eb6678e8f766c97367f7016824bfe8fbc)
 
 this function is used to assign or revoke the full approval rights to the given operator. The caller of the function (msg.sender) is the approver.
 
@@ -49,7 +48,7 @@ The function takes the following arguments:
 - `operator`: This is the address of the operator to whom the approval rights should be given or revoked from the approver.
 - `approved`: This is the Boolean representing the approval to be given or revoked.
 
-after the approval function NFT is ready for staking ([staking contract](https://rinkeby.etherscan.io/address/0xfa1cB7f4419032AceA92fBf708Aedd738B274903#code))
+after the approval function NFT is ready for staking ([staking contract](https://rinkeby.etherscan.io/address/0x18F55DA7Cb736691c93C4864C01C2e7Da69581c5#code))
 
 ### How to stake
 
@@ -61,8 +60,6 @@ this function has following arguments:
 - `uint256 _amount` : Amount of NFT user want to stake.
 - `uint16 _months` : For how many moths i.e. 1,6 or 12 (only these inputs are allowed).
 
-
-Exaple of stacking transaction :fire:	:point_right: [0x6671657b9e85f8065ac057be13256636097b5078d48bb9f0cb69d3c5fbfec59f](https://rinkeby.etherscan.io/tx/0x6671657b9e85f8065ac057be13256636097b5078d48bb9f0cb69d3c5fbfec59f)
 
 ### How to Unstake NFT
 
